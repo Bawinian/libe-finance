@@ -1,0 +1,34 @@
+/* Content remains visible when JavaScript or decorative effects are unavailable. */
+.fade-top,
+.fade-in {
+  opacity: 1 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+.skip-link {
+  position: fixed;
+  top: -80px;
+  left: 16px;
+  z-index: 10000;
+  padding: 12px 18px;
+  color: #fff;
+  background: #373435;
+}
+
+.skip-link:focus { top: 16px; }
+
+.menu-item-has-children:focus-within > .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+:focus-visible { outline: 3px solid #1656d6; outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

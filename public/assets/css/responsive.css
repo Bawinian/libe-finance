@@ -1,0 +1,381 @@
+@charset "utf-8";
+
+/*
+Theme Name: LibeFinance.
+Author: Metropolitanthemes
+Author URL: https://themeforest.net/user/metropolitantheme
+Version: 1.0.0
+
+%%%%%%% Responsive Stylesheet %%%%%%%
+Desktop-first max-width cascade: 1399 / 1199 / 991 / 767 / 575
+*/
+
+/*======================
+Max Width 1399px
+========================*/
+@media (max-width: 1399.98px) {
+  .hero-area .chip-1 { left: -10px; }
+  .hero-area .chip-2 { right: -8px; }
+}
+
+/*======================
+Max Width 1199px
+========================*/
+@media (max-width: 1199.98px) {
+
+  /* rate table: drop the per-$10k column, keep it scroll-free */
+  .ratetable-area th:nth-child(5),
+  .ratetable-area td:nth-child(5) {
+    display: none;
+  }
+  .ratetable-area thead th {
+    white-space: normal;
+  }
+
+  /* loan tabs */
+  .loantabs-area .ld-globe {
+    width: 340px;
+    height: 340px;
+    right: -100px;
+    top: -80px;
+  }
+  .sec-pt-130 { padding-top: 110px; }
+  .sec-pb-130 { padding-bottom: 110px; }
+  .ld-topbar .topbar-note { display: none; }
+  .header-area .ld-nav > ul > li > a { padding: 32px 10px; font-size: 14.5px; }
+  .hero-area { padding: 175px 0 110px 0; }
+  .about-area .about-media { padding-right: 40px; }
+  .about-area .about-media .main-img { height: 460px; }
+}
+
+/*======================
+Max Width 991px
+========================*/
+@media (max-width: 991.98px) {
+
+  /* inner pages */
+  .subheader-area {
+    padding: 150px 0 54px 0;
+  }
+  .subheader-area .page-title {
+    font-size: 38px;
+  }
+  .loanstep-area .wizard-progress .wstep .lbl {
+    display: none;
+  }
+  .loanstep-area .wizard-progress .wstep:not(:last-child)::after {
+    margin: 0 8px;
+  }
+
+  /* x slider */
+  .xslider-area {
+    margin-top: -60px;
+  }
+
+  /* preloader */
+  .ld-preloader .pre-count {
+    right: 26px;
+    bottom: 18px;
+  }
+
+  /* rate table: drop the terms and borrow columns */
+  .ratetable-area th:nth-child(3),
+  .ratetable-area td:nth-child(3),
+  .ratetable-area th:nth-child(4),
+  .ratetable-area td:nth-child(4) {
+    display: none;
+  }
+  .ratetable-area tbody td,
+  .ratetable-area thead th {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .ratetable-area .rate-stars .stars i {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+
+  /* footer */
+  .footer-area .footer-infobar .ld-btn {
+    margin-left: 0;
+  }
+  .footer-area .footer-top .row {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 44px;
+  }
+
+  /* practice */
+  .practice-area .practice-fx {
+    display: none;
+  }
+  .practice-area .advisor-card .thumb img {
+    height: 280px;
+    object-position: center 25%;
+  }
+  .practice-area .practice-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* about */
+  .about-area .ld-rings {
+    display: none;
+  }
+  .practice-area .practice-nav .nav-link {
+    width: calc(50% - 6px);
+  }
+  .sec-pt-130 { padding-top: 90px; }
+  .sec-pb-130 { padding-bottom: 90px; }
+  .header-area .ld-nav { display: none; }
+  .header-area .signin-link { display: none; }
+  .ld-menu-toggle { display: flex; }
+  .hero-area { padding: 155px 0 90px 0; }
+  .hero-area .hero-calc {
+    margin: 60px auto 0 auto;
+  }
+  .hero-area .chip-1 { left: -6px; top: -18px; }
+  .hero-area .chip-2 { right: -4px; }
+  .stats-area .col-lg-3 + .col-lg-3 .stat-item::before { display: none; }
+  .stats-area .stat-item { padding: 14px 0; }
+  .about-area .about-content { margin-top: 70px; }
+  .calc-area .calc-widget { margin-top: 60px; }
+  .cta-area .cta-inner { padding: 70px 0; }
+  .footer-area .footer-top { padding: 74px 0 40px 0; }
+}
+
+/*======================
+Max Width 767px
+========================*/
+@media (max-width: 767.98px) {
+
+  /* inner pages */
+  .subheader-area .page-title {
+    font-size: 32px;
+  }
+  .bsingle-area .post-media img {
+    height: 260px;
+  }
+  .bsingle-area .post-content h1 {
+    font-size: 27px;
+  }
+  .sdetail-area .sd-media img {
+    height: 240px;
+  }
+  .utility-area h1 {
+    font-size: 32px;
+  }
+  .utility-area .ld-countdown .cd-box {
+    min-width: 78px;
+    padding: 14px 10px;
+  }
+  .loanstep-area .wizard-card {
+    padding: 26px 20px;
+  }
+  .calcsuite-area .calc-panel {
+    padding: 24px 20px;
+  }
+  .calcsuite-area .amort-table th,
+  .calcsuite-area .amort-table td {
+    padding: 11px 10px;
+    font-size: 13px;
+  }
+
+  /* hero */
+  .hero-area .hero-bg-img {
+    opacity: 0.35;
+  }
+  .ld-side-label {
+    display: none;
+  }
+
+  /* x slider */
+  .xslider-area {
+    margin-top: -46px;
+  }
+
+  /* loan tabs */
+  .loan-tab-nav {
+    width: 100%;
+  }
+  .loan-tab-nav .nav-item {
+    flex: 1 1 calc(50% - 4px);
+  }
+  .loan-tab-nav .nav-link {
+    width: 100%;
+    padding: 12px 14px;
+  }
+  .loantabs-area .ld-globe {
+    display: none;
+  }
+
+  /* rate table: loan, rate and apply only */
+  .ratetable-area th:nth-child(6),
+  .ratetable-area td:nth-child(6) {
+    display: none;
+  }
+  .ratetable-area tbody td,
+  .ratetable-area thead th {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ratetable-area .ld-btn.btn-sm .btn-ic {
+    display: none;
+  }
+  .ratetable-area .loan-cell .agency {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+  }
+  .ratetable-area .ld-btn.btn-sm {
+    padding: 10px 16px;
+  }
+
+  /* process */
+  .process-area .process-item {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background-color: rgba(var(--ld-color-navy-rgb), 0.55);
+  }
+
+  /* practice */
+  .practice-area .practice-nav .nav-link {
+    width: 100%;
+  }
+  .practice-area .practice-pane {
+    padding: 24px;
+  }
+
+  /* footer */
+  .footer-area .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+  }
+  body { font-size: 16px; }
+  .sec-pt-130 { padding-top: 80px; }
+  .sec-pb-130 { padding-bottom: 80px; }
+  .ld-topbar .ld-social { display: none; }
+  .ld-topbar .topbar-inner { justify-content: center; }
+  .hero-area .hero-text { font-size: 17px; }
+  .hero-area .float-chip { display: none; }
+  .hero-area .hero-calc { padding: 28px 24px; }
+  .calc-result .figure { font-size: 29px; }
+  .about-area .about-media { padding-right: 20px; padding-bottom: 50px; }
+  .about-area .about-media .main-img { height: 400px; }
+  .about-area .about-media .float-img { width: 190px; }
+  .about-area .about-content .ld-check-list { columns: 1; }
+  .calc-area .calc-widget { padding: 28px 24px; }
+  .calc-area .calc-outputs { grid-template-columns: 1fr; }
+  .plans-area .plan-item .plan-rate { font-size: 44px; }
+  .testimonial-area .testimonial-controls { justify-content: flex-start; margin-top: 18px; }
+  .cta-area .cta-inner { padding: 60px 0; }
+  .footer-area .footer-bottom { flex-direction: column; text-align: center; }
+  .ld-backtop { right: 18px; bottom: 18px; width: 46px; height: 46px; }
+}
+
+/*======================
+Max Width 575px
+========================*/
+@media (max-width: 575.98px) {
+
+  /* rate table: essentials only */
+  .ratetable-area tbody td,
+  .ratetable-area thead th {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .ratetable-area .loan-cell {
+    gap: 8px;
+  }
+  .ratetable-area .loan-cell .name {
+    white-space: normal;
+  }
+  .ratetable-area .loan-cell .sub {
+    font-size: 11.5px;
+  }
+  .ratetable-area .loan-cell .agency {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    padding: 4px;
+  }
+  .ratetable-area .apr {
+    font-size: 18px;
+  }
+  .ratetable-area .apr small {
+    display: block;
+  }
+  .ratetable-area .ld-btn.btn-sm {
+    padding: 9px 14px;
+  }
+  .ratetable-area .ld-btn.btn-sm .btn-ic {
+    display: none;
+  }
+
+  /* footer */
+  .footer-area .footer-newsletter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 28px 0;
+  }
+  .footer-area .footer-newsletter .newsletter-side {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: none;
+  }
+  .footer-area .footer-infobar {
+    padding: 22px;
+    gap: 18px;
+  }
+  .footer-area .footer-infobar .ib-item + .ib-item {
+    border-left: none;
+    padding-left: 0;
+  }
+  .footer-area .footer-top .row {
+    grid-template-columns: 1fr;
+  }
+
+  /* hero slider */
+  .hero-area .hero-nav .h-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .hero-area .calc-terms {
+    flex-wrap: wrap;
+  }
+  .hero-area .calc-terms button {
+    flex: 1 1 calc(50% - 5px);
+  }
+
+  /* preloader */
+  .ld-preloader .pre-brand {
+    font-size: 22px;
+  }
+  .logo-word {
+    font-size: 18px;
+  }
+
+  /* loan tabs */
+  .loan-tab-nav .nav-item {
+    flex: 1 1 100%;
+  }
+  .loantabs-area .tab-pane h3 {
+    font-size: 24px;
+  }
+  .sec-pt-130 { padding-top: 70px; }
+  .sec-pb-130 { padding-bottom: 70px; }
+  .hero-area .hero-badge { font-size: 12.5px; }
+  .hero-area .hero-trust { flex-wrap: wrap; }
+  .hero-area .hero-calc .calc-result { flex-direction: column; align-items: flex-start; }
+  .calc-result .sub { text-align: left; }
+  .calc-terms { flex-wrap: wrap; }
+  .calc-terms button { flex: 1 0 30%; }
+  .stats-area .stat-item .number { font-size: 36px; }
+  .about-area .about-media .exp-badge { left: 14px; top: 14px; padding: 14px 18px; }
+  .about-area .about-media .exp-badge .num { font-size: 28px; }
+  .service-area .service-item { padding: 28px 24px; }
+  .blog-area .blog-item .thumb { height: 200px; }
+  .testimonial-area .testimonial-item { padding: 28px 24px; }
+  .testimonial-area .testimonial-item .quote { font-size: 17px; }
+  .cta-area .cta-title { font-size: 28px; }
+}
